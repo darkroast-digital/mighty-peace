@@ -1,0 +1,31 @@
+{% extends 'layouts/app.twig' %}
+{% block pageclass %}contact{% endblock %}
+
+{% block content %}
+    <a href="#0" class="contact-cta" target="_blank">
+        <img src="assets/img/contact-flip.png" draggable="false">
+    </a>
+
+    <!-- End CTA -->
+
+    <img src="assets/img/contact-title.png" alt="Find Us" draggable="false">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nulla ullam quia, culpa ex, voluptate rem libero, quas necessitatibus iste quae. Nulla quasi aperiam quo atque, voluptas magnam! Non impedit possimus nostrum officia facilis saepe praesentium vel atque laboriosam deleniti.</p>
+    <ul>
+        <li><img src="assets/img/icons/phone.svg" draggable="false"> 1.555.444.6666</li>
+        <li><img src="assets/img/icons/location.svg" draggable="false"> 10120 9th Ave Fort St. John, BC</li>
+        <li><img src="assets/img/icons/mail.svg" draggable="false"> info@mightypeacebrewing.ca</li>
+    </ul>
+    <form action="" method="post">
+        <div class="field">
+            <input type="text" name="name" placeholder="Name">
+            <input type="phone" name="phone" placeholder="Phone">
+        </div>
+        <div class="field">
+            <input type="email" name="email" placeholder="Email">
+        </div>
+        <div class="field">
+            <textarea name="message" placeholder="Message"></textarea>
+        </div>
+        <button type="submit" class="button--link">Send <i class="fa fa-caret-right"></i></button>
+    </form>
+{% endblock %}

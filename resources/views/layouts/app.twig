@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Viewport Meta -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Styles -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+
+    <!-- Mobile Theme Colour -->
+
+    <meta name="theme-color" content="#D73441">
+
+    <!-- Title and Description -->
+
+    <title>Mighty Peace Brewing Company | {% block title %}{% endblock %}</title>
+    <meta type="description" content="">
+
+    <!-- Favicons -->
+
+    <link rel="icon" href="assets/img/fa.png">
+
+    <meta property="og:title" content="Mighty Peace Brewing Company">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://mightypeacebrewing.ca">
+    <meta property="og:site_name" content="Mighty Peace Brewing Company">
+    <meta property="og:image" content=" /assets/img/og.jpg">
+
+    <!--[if lt IE 9]>
+     <script src="js/polyfill/html5-shiv.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+    <div class="{% block pageclass %}{% endblock %}" id="app">
+
+
+        
+        {% include 'partials/nav.twig' %}
+        {% include 'partials/hamburger.twig' %}
+        {% include 'partials/off-canvas.twig' %}
+        {% include 'partials/overlay.twig' %}
+
+        <div class="content">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+
+    <!-- See you space cowboy... -->
+</body>
+</html>
