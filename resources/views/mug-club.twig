@@ -1,0 +1,24 @@
+{% extends 'layouts/app.twig' %}
+{% block pageclass %}mug-club{% endblock %}
+
+{% block content %}
+    
+    <div class="title container container--full">
+        <div class="column-6"><img class="mugClubLogo" src="/assets/img/mug-club-logo.svg" alt="Mighty Peace Mug Club"></div>
+        <div class="column-6"><h1>WANT TO GIVE JUST ABOUT THE BEST GIFT ANYONE COULD RECEIVE IN FORT ST. JOHN?!?</h1></div>
+    </div>
+
+    <div class="container container--full">
+        <div class="column-7 offset-5">
+            <p> Place your membership order BEFORE December 20th to receive a snazzy certificate just in time for Christmas, Boxing Day, Kwanzaa, Yule, Festivus, Hanukkah (the final day at least), Winter Solstice or whatever you celebrate, or don't, around this time of year.</p>
+            <p>Obviously if you want to get it in time for the earlier occurring holidays, please make your order sooner and note in the comments.  We'll do our best to accommodate, but we don't have special Santa powers for the delivery of your Mighty Membership gifts.</p>
+            <p>You'll get a certificate even if your join after the holidays too.  You can frame it and place it next to your degree, technical certification, marriage certificate, family photo or your autographed photo of William Shatner in his Captain tunic from Star Trek The Original Series.  Details will be emailed out when and where certificates will be available for pickup as the time draws near.</p>
+            <p>Mug will be stored at the brewery</p>
+            <p>All membership items will be available at pre-opening event, grand opening and thereafter.</p>
+            <hr>
+            <a href="{{ path_for('mug-club-info') }}" class="button presentationButton">Learn More <i class="fa fa-caret-right"></i></a>
+        </div>
+    </div>
+
+
+{% endblock %}

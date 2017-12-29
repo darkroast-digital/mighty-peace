@@ -23,8 +23,17 @@ $sidebar-width: 250px;
     display: flex;
     max-width: 100%;
 
+    @include breakpoint(md) {
+        display: block;
+    }
+
     .field {
         width: 33.33333%;
+
+        @include breakpoint(md) {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
     }
 
     input {
@@ -233,6 +242,10 @@ $sidebar-width: 250px;
             font-weight: bold;
             font-size: ms(4);
 
+            @include breakpoint(md) {
+                font-size: ms(2);
+            }
+
             i {
                 margin: .25rem 0 0 .5rem;
             }
@@ -259,8 +272,13 @@ $sidebar-width: 250px;
         left: 0;
         height: 250px;
 
+        @media screen and (max-height: 720px) {
+            display: none;
+        }
+
         @include breakpoint(md) {
             height: 150px;
+            display: none;
         }
 
         img {
@@ -656,5 +674,132 @@ input {
                 display: block;
             }
         }
+    }
+}
+
+
+
+
+// #MUG CLUB
+// =========================================================================
+
+.mug-club {
+
+    .content {
+        background: url('/assets/img/mug-club-bg.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
+
+    h1 {
+        line-height: 1;
+    }
+
+    h1,
+    p {
+        color: color(white);
+        text-align: right;
+        text-shadow: 0 0 .25rem rgba(color(black), .75);
+    }
+}
+
+.mugClubLogo {
+    max-width: 50%;
+
+    @include breakpoint(md) {
+        max-width: 75%;
+        margin-top: 3rem;
+        float: right;
+    }
+}
+
+.column-6 {
+    clear: both;
+}
+
+.presentationButton {
+    float: right;
+    color: color(primary);
+    background: transparent;
+    border-width: .2rem;
+    font-size: ms(3);
+
+    &:hover {
+        color: color(white);
+        background: color(primary);
+        border-width: .2rem;
+    }
+}
+
+
+
+
+// #MUG CLUB INFO
+// =========================================================================
+
+.mug-club-info {
+
+    .content {
+        background: url('/assets/img/mug-club-info-bg.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
+
+    p,
+    ul {
+        color: color(white);
+    }
+}
+
+.memberContainer {
+
+    .column-12 {
+        text-align: center;
+
+        p {
+            margin-bottom: 0;
+        }
+        
+        strong {
+            color: color(primary);
+        }
+    }
+
+    .title {
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+
+    .column-6 {
+        padding-left: 2rem;
+        margin-bottom: 1rem;
+
+        &:last-of-type {
+            border-left: solid .15rem color(white);
+
+            @include breakpoint(md) {
+                border-left: 0;
+            }
+        }
+    }
+}
+
+.memberInfo {
+    max-width: 300px;
+    max-height: 140px;
+}
+
+input[type="image"] {
+    border: none;
+    max-width: 125px;
+}
+
+.disclaimer {
+    position: absolute;
+    bottom: 1rem;
+
+    @include breakpoint(md) {
+        position: relative;
+        bottom: auto;
     }
 }

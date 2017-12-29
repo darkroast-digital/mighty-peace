@@ -2,6 +2,8 @@
 
 use App\Controllers\SiteController;
 
+$app->get('/mug-club', SiteController::class . ':mugClub')->setName('mug-club');
+$app->get('/mug-club/info', SiteController::class . ':mugClubInfo')->setName('mug-club-info');
 $app->get('/[{message}]', SiteController::class . ':home')->setName('home');
 // $app->get('/about', SiteController::class . ':about')->setName('about');
 // $app->get('/beers', SiteController::class . ':beers')->setName('beers');

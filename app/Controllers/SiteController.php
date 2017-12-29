@@ -9,10 +9,12 @@ class SiteController extends Controller
 {
     public function home($request, $response, $args)
     {
-        $message = $args['message'];
+        if (isset($args['message'])) {
+            $message = $args['message'];
 
-        if ($message == 'submitted') {
-            $message = 'Thanks for submitting your email.  We\'ll be in touch soon!';
+            if ($message == 'submitted') {
+                $message = 'Thanks for submitting your email.  We\'ll be in touch soon!';
+            }
         }
 
         return $this->c->view->render($response, 'home.twig', compact('message'));
@@ -31,6 +33,16 @@ class SiteController extends Controller
     public function swag($request, $response, $args)
     {
         return $this->c->view->render($response, 'swag.twig');
+    }
+
+    public function mugClub($request, $response, $args)
+    {
+        return $this->c->view->render($response, 'mug-club.twig');
+    }
+
+    public function mugClubInfo($request, $response, $args)
+    {
+        return $this->c->view->render($response, 'mug-club-info.twig');
     }
 
     public function news($request, $response, $args)

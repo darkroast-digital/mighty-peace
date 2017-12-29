@@ -1,0 +1,55 @@
+{% extends 'layouts/app.twig' %}
+{% block pageclass %}mug-club-info{% endblock %}
+
+{% block content %}
+
+    <div class="memberContainer container container--full">
+        <div class="column-12"><img class="title" src="/assets/img/member-title.png" alt="How Mighty Are You?" draggable="false"></div>
+        <div class="column-6">
+            <img class="memberInfo" src="/assets/img/mighty-few.png" alt="Mighty Peace Mug Club" draggable="false">
+            <p>Starting opening day anniversary</p>
+            <ul>
+                <li>Numbered Mug</li>
+                <li>50% off one growler fill on Mug Club Mondays*</li>
+                <li>Large pours*</li>
+                <li>64oz (1.89L) glass growler</li>
+                <li>Non-transferable membership</li>
+                <li>Exclusive access to beer releases and events (including pre-grand opening event)</li>
+                <li>The Mighty Few 2018 T-shirt</li>
+                <li>Stickers</li>
+            </ul>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="T76L44S62T4TQ">
+                <input style="cursor: pointer;" type="image" src="http://mightypeacebrewing.ca/assets/img/paypal.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+        </div>
+        <div class="column-6">
+            <img class="memberInfo" src="/assets/img/founders-club.png" alt="Mighty Peace Mug Club" draggable="false">
+            <ul>
+                <li>Personalized mug with name, membership date, # of 75</li>
+                <li>50% off of your first beer FOR LIFE*</li>
+                <li>50% off one growler fill once a week, any day*</li>
+                <li>Larger pours*</li>
+                <li>Insulated stainless steel growler</li>
+                <li>One-time membership transferable to a very lucky person</li>
+                <li>Exclusive access to beer releases and events (including pre-grand opening event)</li>
+                <li>Founders Club T-shirt</li>
+                <li>Free glass of your choice to take home</li>
+            </ul>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="FCUCBGAGAJ9CL">
+                <input style="cursor: pointer;" type="image" src="http://mightypeacebrewing.ca/assets/img/paypal.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+        </div>
+        <div class="column-12 disclaimer">
+            <p>Both clubs receive a <strong>FREE BIRTHDAY GROWLER</strong>, plus exclusive  access to new beer tastings & monthly draws.</p>
+            <p><small>*Some beers will be very limited and/or higher alcohol, thus having smaller pours (generally 8-10oz).  Many mug clubs limit member benefits to the regular lineup of beers and no special release beers, but we think you're Mighty special for your commitment, so we let you use your discount on any beer pouring in the taproom.</small></p>
+        </div>
+    </div>
+
+
+{% endblock %}
